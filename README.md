@@ -1,4 +1,4 @@
-<img src="obi_logo.png" width="275" height="100">
+_<img src="obi_logo.png" width="275" height="100">
 
 # Southern California Association of Government Area Residential Zoning Data
 ## Published by The Othering &amp; Belonging Institute
@@ -9,14 +9,26 @@ This data repository contains the Othering &amp; Belonging Institute's residenti
 Menendian, Stephen, Samir Gambhir, Chih-Wei Hsu. 2022. *SCAG Report: TITLE*. Distributed by Othering &amp; Belonging Institute. 
 
 ## About the Data
-This repository includes parcel-level shapefiles for all incorporated municipalities of the six SCAG region counties: Imperial, Los Angeles, Orange, Riverside, San Berbardino, and Ventura. Each shapefile contains a categorization of residential zoning based on the most recent publicly available zoning maps and municipal code at the time of initial analysis (Fall 2021). Zoning has been separated into three main categories, designated under the *Zoning* field: 
+This repository includes parcel and district level shapefiles for all incorporated municipalities of the six SCAG region counties: Imperial, Los Angeles, Orange, Riverside, San Berbardino, and Ventura. Each shapefile contains a categorization of residential zoning based on the most recent publicly available zoning maps and municipal code at the time of initial analysis (Fall 2021).  
 
-Zoning | Category | Description
+ The *zone_cat* field records our classification of the zone into one of the following categories:  
+ 
+ Abbreviation | Zone name | Description
 ------------ | ------------- | ------------- 
- 1 | Single Family Residential | land zoned for only  detached, single-family residential land use, including two-family detached dwellings 
- 2 | Multi-Family Residential | land zoned *not* restricted to single-family residential; zoned for mixed and multiple dwelling units, including apartment buildings, duplexes, townhomes, mobile home parks, and two-family attached dwellings.
- 0 | Non-Residential | land zoned for non-residential use, including commercial, industrial, public, and recreation land use 
- 3 | Non-Developable | land outside of municipal boundaries or developable land, including water, waterways, and sphere of influence land. *This category was removed from total land area for analysis.*
+ SF | Single Family Residential | This includes single-family zones, low-density zones, agricultural zones (if single-family homes are permitted), and estate zones. This category usually permits detached single-family homes or two detached single-family homes on the same lot or parcel, but not duplexes. The zone is not classified as single-family residential if it only permits the following: caretaker’s residence, employee housing, or live-work units  
+ MF | Multifamily Residential | Includes attached two family homes, condos, apartments, town homes, and mobile homes (parks). Additionally, if a zone’s intent allows for both single-family homes and any of the multi-family housing above, it is sorted into the multi-family category. This category does not include employee housing and student housing.  
+ MIX | Mixed-use Residential | This is land designated to blend multiple uses inclusive of residential use. This includes zones that are not strictly residential but permit or conditionally permit residential uses, e.g., industrial/commercial zones where residential uses are permitted or conditionally permitted, commercial zones where residential units are allowed in commercial buildings, mixed-use zones, or office professional districts that permit single-family homes.  
+ NR | Non-Residential | Land zoned for non-residential use, including commercial, industrial, public, and recreation land use  
+ ND | Non-Developable | Land outside of municipal boundaries or developable land, including water, waterways, and sphere of influence land. *This category was removed from total land area for analysis.*  
+
+The zoning categories are summarized into four larger categories which was used to create our [city zoning maps (add link later)](https://github.com/OtheringBelonging/SCAGZoning), designated under the *Zoning* field: 
+
+Zoning | Category | Include | 
+------------ | ------------- | -------------
+ 1 | Single Family Residential | SF  
+ 2 | Other Residential | MF, MIX  
+ 0 | Non-Residential & Unknown | NR, NA  
+ 3 | Non-Developable | ND  
 
 ## About the Project
 This residential zoning data and analysis is part of the Othering &amp; Belonging Institute's broader research on [SCAG report](https://belonging.berkeley.edu), an effort to unpack the extent, dynamics, and drivers of racial segregation in the Bay Area. 
@@ -25,11 +37,16 @@ Exclusionary, single-family zoning has long been cited as a driver for racial se
 
 ## Methodology
 
+### Data procurement: 
+Zoning shapefiles for each city in the region were gathered from multiple sources, including the [SCAG MPO repository](https://gisdata-scag.opendata.arcgis.com/datasets/SCAG::2019-annual-land-use-dataset-alu-v-2019-2/about), city planning/GIS or relevant departments, and [ESRI’s ArcGIS Hub](https://hub.arcgis.com/search?collection=Dataset) in the listed order to ensure we have the most updated shapefiles to conduct our analysis.
 
-#### Special Cases. 
-* **Mixed Use:**  
-* **Specific Plans:** 
-* **Planned Development:**  
+
+### Zone categorization:
+We prioritized and focused on the intent and the purpose of the zone to sort the zones into one of the three categories: non-residential/unknown, single-family, and other residential. For example, a residential zone intended for both single-family and multi-family developments would be classified in the other residential category (which includes multi-family zones), even if multi-family is only conditionally permitted. This is because the zone’s intention was for both single-family and multi-family developments. 
+
+When the intent and purpose of the zone was unclear, we classified the zone based on what is permitted in the zone. For example, consider a “general residential” zone that does not specify whether it is strictly for single-family homes in its intent. If it permits single-family homes but only conditionally permits multi-family homes, it would be classified in the single-family category. And if it permits both single-family homes and multi-family homes, it would be classified in the other residential category. Since we prioritized the zone’s stated intent and purpose in the city ordinance, we would only rely on the permitted use if the intent and purpose was unclear.
+
+For planned development and specific plan zones where the municipal ordinance does not detail the intent and purpose enough for us to classify the entire zone or zones that are missing in the municipal ordinance, we used the standardized land use class from SCAG to categorize the parcels in these zones into one of the three categories above.
 
 ## License and Attribution
 We are making this data publicly available for broad, noncommercial public use for researchers, policymakers, and the academic community. If you use this data, we request you attribute it to “The Othering &amp Belonging Institute” in your publication and use the citation provided below. If you use it in an online report, we request that you link to our our digital report, [SCAG report](https://belonging.berkeley.edu).  
@@ -39,4 +56,4 @@ If you do use the data, we would love to hear about it! Send us an email at <bel
 See our [LICENSE](https://github.com/OtheringBelonging/SCAGZoning/blob/main/LICENSE) for the full terms of use for this data.
 
 ## Contact Us
-If you have questions about the data or licensing conditions, please contact us at: <belonging@berkeley.edu>
+If you have questions about the data or licensing conditions, please contact us at: <belonging@berkeley.edu> 
