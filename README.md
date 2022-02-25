@@ -11,7 +11,9 @@ Menendian, Stephen, Samir Gambhir, Chih-Wei Hsu. 2022. *Single-Family Zoning in 
 ## About the Data
 This repository includes parcel and district level shapefiles for all incorporated municipalities of the six SCAG region counties: Imperial, Los Angeles, Orange, Riverside, San Berbardino, and Ventura. Each shapefile contains a categorization of residential zoning based on the most recent publicly available zoning maps and municipal code at the time of initial analysis (Fall 2021).  
 
- The *zone_cat* field records our classification of the zone into one of the following categories:  
+The `city_zone` field records the city's original zoning designation as found in the zoning data. 
+The `zone_descp` field records the description of the `city_zone` based on the city's ordinance.
+ The `zone_cat` field records our classification of the zone into one of the following categories:  
  
  Abbreviation | Zone name | Description
 ------------ | ------------- | ------------- 
@@ -21,7 +23,7 @@ This repository includes parcel and district level shapefiles for all incorporat
  NR | Non-Residential | Land zoned for non-residential use, including commercial, industrial, public, and recreation land use  
  ND | Non-Developable | Land outside of municipal boundaries or developable land, including water, waterways, and sphere of influence land. *This category was removed from total land area for analysis.*  
 
-The zoning categories are summarized into four larger categories which was used to create our [city zoning maps (add link later)](https://github.com/OtheringBelonging/SCAGZoning), designated under the *Zoning* field: 
+The zoning categories are summarized into four larger categories which was used to create our [city zoning maps (add link later)](https://github.com/OtheringBelonging/SCAGZoning), designated under the `Zoning` field: 
 
 Zoning | Category | Include | 
 ------------ | ------------- | -------------
