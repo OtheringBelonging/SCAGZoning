@@ -1,4 +1,4 @@
-<img src="obi_logo.png" width="275" height="100">
+_<img src="obi_logo.png" width="275" height="100">
 
 # Southern California Association of Government Area Residential Zoning Data
 ## Published by The Othering &amp; Belonging Institute
@@ -11,8 +11,8 @@ Menendian, Stephen, Samir Gambhir, Chih-Wei Hsu. 2022. *Single-Family Zoning in 
 ## About the Data
 This repository includes parcel and district level shapefiles for all incorporated municipalities of the six SCAG region counties: Imperial, Los Angeles, Orange, Riverside, San Berbardino, and Ventura. Each shapefile contains a categorization of residential zoning based on the most recent publicly available zoning maps and municipal code at the time of initial analysis (Fall 2021).  
 
-The `city_zone` field records the city's original zoning designation as found in the zoning data. 
-The `zone_descp` field records the description of the `city_zone` based on the city's ordinance.
+The `city_zone` field records the city's original zoning designation as found in the zoning data.  
+The `zone_descp` field records the description of the `city_zone` based on the city's ordinance.  
  The `zone_cat` field records our classification of the zone into one of the following categories:  
  
  Abbreviation | Zone name | Description
