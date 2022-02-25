@@ -6,7 +6,7 @@ _<img src="obi_logo.png" width="275" height="100">
 This data repository contains the Othering &amp; Belonging Institute's residential zoning data, originally analyzed and published in the report [SCAG Report](https://belonging.berkeley.edu/)  
 
 ## Citation
-Menendian, Stephen, Samir Gambhir, Chih-Wei Hsu. 2022. *SCAG Report: TITLE*. Distributed by Othering &amp; Belonging Institute. 
+Menendian, Stephen, Samir Gambhir, Chih-Wei Hsu. 2022. *Single-Family Zoning in Greater Los Angeles*. Distributed by Othering &amp; Belonging Institute. 
 
 ## About the Data
 This repository includes parcel and district level shapefiles for all incorporated municipalities of the six SCAG region counties: Imperial, Los Angeles, Orange, Riverside, San Berbardino, and Ventura. Each shapefile contains a categorization of residential zoning based on the most recent publicly available zoning maps and municipal code at the time of initial analysis (Fall 2021).  
