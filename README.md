@@ -1,4 +1,4 @@
-_<img src="obi_logo.png" width="275" height="100">
+<img src="obi_logo.png" width="275" height="100">
 
 # Southern California Association of Government Area Residential Zoning Data
 ## Published by The Othering &amp; Belonging Institute
