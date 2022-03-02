@@ -3,7 +3,7 @@
 # Southern California Association of Government Area Residential Zoning Data
 ## Published by The Othering &amp; Belonging Institute
 
-This data repository contains the Othering &amp; Belonging Institute's residential zoning data, originally analyzed and published in the report [SCAG Report](https://belonging.berkeley.edu/)  
+This data repository contains the Othering &amp; Belonging Institute's residential zoning data, originally analyzed and published in the [Single-Family Zoning in Greater Los Angeles Report](https://belonging.berkeley.edu/single-family-zoning-greater-los-angeles)  
 
 ## Citation
 Menendian, Stephen, Samir Gambhir, Chih-Wei Hsu. 2022. *Single-Family Zoning in Greater Los Angeles*. Distributed by Othering &amp; Belonging Institute. 
@@ -23,7 +23,7 @@ The `zone_descp` field records the description of the `city_zone` based on the c
  NR | Non-Residential | Land zoned for non-residential use, including commercial, industrial, public, and recreation land use  
  ND | Non-Developable | Land outside of municipal boundaries or developable land, including water, waterways, and sphere of influence land. *This category was removed from total land area for analysis.*  
 
-The zoning categories are summarized into four larger categories which was used to create our [city zoning maps (add link later)](https://github.com/OtheringBelonging/SCAGZoning), designated under the `Zoning` field: 
+The zoning categories are summarized into four larger categories which was used to create our [city zoning maps](https://belonging.berkeley.edu/greater-la-region-zoning-maps), designated under the `Zoning` field: 
 
 Zoning | Category | Include | 
 ------------ | ------------- | -------------
@@ -33,9 +33,9 @@ Zoning | Category | Include |
  3 | Non-Developable | ND  
 
 ## About the Project
-This residential zoning data and analysis is part of the Othering &amp; Belonging Institute's broader research on [SCAG report](https://belonging.berkeley.edu), an effort to unpack the extent, dynamics, and drivers of racial segregation in the Bay Area. 
+This residential zoning data and analysis is part of the Othering &amp; Belonging Institute's broader research on [Segregation](https://belonging.berkeley.edu/roots-structural-racism-2020), an effort to unpack the extent, dynamics, and drivers of racial segregation. 
 
-Exclusionary, single-family zoning has long been cited as a driver for racial segregation. In order to examine the impact of single family zoning in the Bay Area, we gathered and categorized zoning shapefiles to measure the spatial distribution and extent of restricted single family zoning, specifically as a portion of total residential land use. In [SCAG report](https://belonging.berkeley.edu/), we used this residential zoning data to analyze measures of segregation against restricted single family zoning to show the role of zoning in driving segregation. We also used this residential zoning data to assess the characteristics of communities within and outside of restricted single family zoning in the Bay Area.
+Exclusionary, single-family zoning has long been cited as a driver for racial segregation. In order to examine the impact of single family zoning in the Greater Los Angeles Area, we gathered and categorized zoning shapefiles to measure the spatial distribution and extent of restricted single family zoning, specifically as a portion of total residential land use. In [Single-Family Zoning in Greater Los Angeles Report](https://belonging.berkeley.edu/single-family-zoning-greater-los-angeles), we used this residential zoning data to analyze measures of segregation against restricted single family zoning to show the role of zoning in driving segregation. We also used this residential zoning data to assess the characteristics of communities within and outside of restricted single family zoning in the Greater Los Angeles Area.
 
 ## Methodology
 
