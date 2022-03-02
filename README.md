@@ -51,7 +51,7 @@ When the intent and purpose of the zone was unclear, we classified the zone base
 For planned development and specific plan zones where the municipal ordinance does not detail the intent and purpose enough for us to classify the entire zone or zones that are missing in the municipal ordinance, we used the standardized land use class from SCAG to categorize the parcels in these zones into one of the three categories above.
 
 ## License and Attribution
-We are making this data publicly available for broad, noncommercial public use for researchers, policymakers, and the academic community. If you use this data, we request you attribute it to “The Othering &amp Belonging Institute” in your publication and use the citation provided below. If you use it in an online report, we request that you link to our our digital report, [SCAG report](https://belonging.berkeley.edu).  
+We are making this data publicly available for broad, noncommercial public use for researchers, policymakers, and the academic community. If you use this data, we request you attribute it to “The Othering &amp Belonging Institute” in your publication and use the citation provided below. If you use it in an online report, we request that you link to our our digital report, [Single-Family Zoning in Greater Los Angeles Report](https://belonging.berkeley.edu/single-family-zoning-greater-los-angeles).  
 
 If you do use the data, we would love to hear about it! Send us an email at <belonging@berkeley.edu>
 
